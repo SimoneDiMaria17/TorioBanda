@@ -17,13 +17,13 @@ const dati = [
     },
     {
         "domanda":"Questa canzone è presente",
-        "corretta":"",
-        "sbagliata":""
+        "corretta":"no",
+        "sbagliata":"si"
     },
     {
         "domanda":"Questa è la prima canzone aggiunta?",
-        "corretta":"si",
-        "sbagliata":"no"
+        "corretta":"no",
+        "sbagliata":"si"
     },
     {
         "domanda":"",
@@ -40,5 +40,13 @@ function generaRisposta(id){
     }else{
         document.getElementById("risp1").innerText=dati[id].sbagliata;
         document.getElementById("risp2").innerText=dati[id].corretta;
+    }
+    if(id==4){
+        const audio = new Audio('../Canzoni/Torio/See You Again (feat. Kali Uchis)_spotdown.org.mp3');
+        audio.play()
+    }
+    if(id==3){
+        const audio = new Audio('../Canzoni/Torio/');
+        audio.play()
     }
 }

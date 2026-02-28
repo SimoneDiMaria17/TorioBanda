@@ -32,13 +32,12 @@ const dati = [
 ]
 
 function generaRisposta(id){
-    document.getElementById("testo").innerText=dati[0].domanda;
+    document.getElementById("testo").innerText=dati[id].domanda;
     if(id%2!=0){
-        document.getElementById("risp1").innerText=dati[0].corretta;
-        document.getElementById("risp2").innerText=dati[0].sbagliata;
+        document.getElementById("risp1").innerText=dati[id].corretta;
+        document.getElementById("risp2").innerText=dati[id].sbagliata;
     }else{
-        document.getElementById("risp1").innerText=dati[0].sbagliata;
-        document.getElementById("risp2").innerText=dati[0].corretta;
+        document.getElementById("risp1").innerText=dati[id].sbagliata;
+        document.getElementById("risp2").innerText=dati[id].corretta;
     }
-    console.log(dati[0]);
 }
