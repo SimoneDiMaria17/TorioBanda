@@ -1,0 +1,71 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    width: 100%;
+}
+.content {
+padding: 2%;
+height: 90%;
+width: 75%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+}
+.title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.domanda{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#testo{
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.risposte{
+    
+    margin-top: 2%;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#risp1,#risp2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.contenuto{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 5%;
+    align-items: center;
+    place-items: center;
+}
+.contenuto>div{
+    color: transparent;
+    width: 50%;
+    height: 50%;
+}
