@@ -44,11 +44,17 @@ function generaRisposta(id){
     if(id==4){
         const audio = new Audio('../Canzoni/Torio/See You Again (feat. Kali Uchis)_spotdown.org.mp3');
         audio.play()
-        
-        audio.pause()
+        setTimeout(()=>{
+            audio.pause();
+            audio.currentTime =0;
+        },10000)
     }
     if(id==3){
         const audio = new Audio('../Canzoni/Torio/');
         audio.play()
+        setTimeout(()=>{
+            audio.pause();
+            audio.currentTime =0;
+        },10000)
     }
 }

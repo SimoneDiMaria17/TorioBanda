@@ -1,33 +1,34 @@
 
 const dati = [
     {
-        "domanda":"1",
-        "corretta":"2",
-        "sbagliata":"3"
+        "domanda":"In quale gioco di ruolo giapponese la musica del “Battle Theme” cambia a seconda del personaggio che combatti?",
+        "corretta":"Final Fantasy VI",
+        "sbagliata":"persona 5 reload"
     },
     {
-        "domanda":"",
-        "corretta":"",
-        "sbagliata":""
+        "domanda":"Quale strumento musicale virtuale puoi suonare liberamente in The Legend of Zelda:",
+        "corretta":"Ocarina",
+        "sbagliata":"banjo"
     },
     {
-        "domanda":"Q",
-        "corretta":"",
-        "sbagliata":""
+        "domanda":"Di che gioco è questa canzone",
+        "corretta":"Tetris",
+        "sbagliata":"space invaders"
     },
     {
-        "corretta":"",
-        "sbagliata":""
+        "domanda":"Chi è il compositore del tema di halo",
+         "corretta":"Martin O’Donnell",
+        "sbagliata":"ruben gentile"
     },
     {
-        "domanda":"",
-        "corretta":"",
-        "sbagliata":""
+        "domanda":"quale gioco ha attualmente una radio in game",
+        "corretta":"gta",
+        "sbagliata":"fortnite"
     },
     {
-        "domanda":"",
-        "corretta":"",
-        "sbagliata":""
+        "domanda":"In quale gioco musicale devi colpire le note usando tamburi",
+        "corretta":"Taiko no Tatsujin",
+        "sbagliata":"tuiko su tsasuka"
     },
 ]
 
@@ -39,5 +40,13 @@ function generaRisposta(id){
     }else{
         document.getElementById("risp1").innerText=dati[id].sbagliata;
         document.getElementById("risp2").innerText=dati[id].corretta;
+    }
+    if(id==2){
+        const audio = new Audio('../Canzoni/Videogiochi/Tetris Theme A (From _Tetris_)_spotdown.org.mp3');
+        audio.play()
+        setTimeout(()=>{
+            audio.pause();
+            audio.currentTime =0;
+        },10000)
     }
 }
