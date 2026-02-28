@@ -1,5 +1,4 @@
-*{
-    
+*,p{
     margin: 0;
     padding: 0;
 }
@@ -18,16 +17,26 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-around;
+
 }
 .gioco{
+    
     height: 50%;
     width: 100%;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto auto;
     place-items: center;
+    row-gap: 1vh;
+    padding-bottom: 1vh;
 }
 .gioco>div{
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
-    height: 50%;
+    height: 75%;
 }
+
+
